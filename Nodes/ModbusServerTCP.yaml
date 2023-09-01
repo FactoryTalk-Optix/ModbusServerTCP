@@ -1,0 +1,61 @@
+Name: ModbusServerTCP
+Id: g=5b6c8cab067849ea4993b0723a5acdfd
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=419ca7ddedbb73beafab71adf41845f8
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Locales
+  Id: g=11fa0e50c3f50a1b3c97ae1969072924
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- Name: LocaleFallbackList
+  Id: g=352ecac98a45bda97433449f056b6348
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Users/Users.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: PasswordPolicy
+  Id: g=1c9cb3982dbb2929c9b2b480b6ca3356
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=cb2751fb1965de6bb15a4bca604fadad
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=d480cfaac06da0278815718c2d005aa8
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+  - Name: MinimumPasswordAge
+    Id: g=74db7f5d66282ee1c65eb97abad39db0
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=121e595ec2e6708a9a9f1efd4bc7095e
+    Type: PropertyType
+    DataType: Byte
+    Value: 0

@@ -1,0 +1,506 @@
+Name: Pannelli
+Id: g=cb1aa3b20681ea6ab1320eaf1c2ff517
+Type: FolderType
+Children:
+- Name: ModbusTcpServer
+  Id: g=8cc85e6fc7412319ef0e5207bf4be3a2
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Background
+    Id: g=ca8b9b8e222a3e738b5811cb10c51f5d
+    Type: Rectangle
+  - Name: LinearGauge1
+    Id: g=382a7baa8b6a4243646177fe840286ce
+    Type: LinearGauge
+    Children:
+    - Name: Value
+      Id: g=df4e54d2c9a246e7fffc6958a765112b
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=bcce0075a714f4c064c4cfd662078f95
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{NodeId:ns=14;g=fcc17d9c-2151-8bfe-1502-007290fe0c77}"
+        Children:
+        - Name: Mode
+          Id: g=606a30c57e3c03cc9b5434905fed7508
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: MinValue
+      Id: g=5fde72266f67296eaef5e1642bc76d27
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: MaxValue
+      Id: g=604659e54580b38991d0fbb3d8782bc5
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Id: g=677a122f7d14eea381fd505a751598f6
+      Type: BaseObjectType
+    - Name: Width
+      Id: g=ca6a32342cc8b19fb3dfe0c34e200221
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 328.0
+    - Name: Height
+      Id: g=d5824b498914e022d56f7d693868a74e
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: LeftMargin
+      Id: g=22ec220b7774e2de2e8cce7b402a3acb
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 272.0
+    - Name: TopMargin
+      Id: g=bf6f3963634742d548317818a9f01fbd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: ValueChangeBehaviour
+      Id: g=3ba4f558572998ecca3d56f4d6d763ae
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+  - Name: Label1
+    Id: g=50eb4ce3c669bb09e874b43b235b234d
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=fe54e34249f12edcf3e8983e31f69210
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"VARIABLE 1"}
+    - Name: LeftMargin
+      Id: g=fd8a4a0cc2e96d31ef31e11d0ca1d406
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 90.0
+    - Name: TopMargin
+      Id: g=87eb33ad12db51b78098b77dfb40d181
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 90.0
+    - Name: FontSize
+      Id: g=d240a791ce98e2ae377a39f368f42e42
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Label2
+    Id: g=eb8721e1cb146f79c5bbdbadb102861a
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=673cbfdafd395de7d26e694a9578b04e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"MODBUS SERVER TCP"}
+    - Name: LeftMargin
+      Id: g=a5230cfb714b861bb5c2170e786b4c67
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: TopMargin
+      Id: g=af7e02ed3e602fc88b6cf44beeae775d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: FontSize
+      Id: g=29ac551ea3e1f2df7e1ff7f4bdbcd7b3
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Label3
+    Id: g=23b32f2e1a1db01e0daaf78c3fee3702
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=7732d2a9776071aa3399f017035d8a95
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"HR 0"}
+    - Name: LeftMargin
+      Id: g=bc558a9e179e700bc9833f19810863e6
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 123.0
+    - Name: TopMargin
+      Id: g=e4be68327a011488f42bfc5e87e36a56
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 113.0
+    - Name: FontSize
+      Id: g=2c04987f41e4ec3259008813b0003dd7
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+  - Name: Label4
+    Id: g=51c00ef1875e570a881198095d00adcd
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=9d33c8268e6705e84a171b524118020e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"VARIABLE 2"}
+    - Name: LeftMargin
+      Id: g=a05501dc1305ede3ba6ed63e62dd3525
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 90.0
+    - Name: TopMargin
+      Id: g=66a5875c04b28abcd7854ddc4a428682
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 196.0
+    - Name: FontSize
+      Id: g=561aabd4fa27ccdb974ed2231dfd01e3
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Label5
+    Id: g=abd7d61559d1880923dc2bab788369e3
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=a1a4bba7b5e80d23ff0a550aa18d3da8
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"VARIABLE 3"}
+    - Name: LeftMargin
+      Id: g=2f2c1e76da2c4987755d62af3a3dc26a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 90.0
+    - Name: TopMargin
+      Id: g=9783fdeb54357345a85a08da3d8da369
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: FontSize
+      Id: g=0333371c9ab61bdff25037eeaf65bd0f
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Label6
+    Id: g=0bdf6752de34e251124b4c6cf08431ad
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=ac903a5cdad524ed6e93ea79fbb94f91
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"HR 1"}
+    - Name: LeftMargin
+      Id: g=e0e749ed123f1a6faa4fa9fb6776dee9
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 123.0
+    - Name: TopMargin
+      Id: g=131dc93a83e19b5ae6fc4832f7831772
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 220.0
+    - Name: FontSize
+      Id: g=06aba5790f1d1913203f976b8748fe26
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+  - Name: Label7
+    Id: g=1c9cbef4ee2c04da8557efec7c033b9f
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=091028274baad2074f010861c294882a
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"HR 2"}
+    - Name: LeftMargin
+      Id: g=b2df9f687e46b5f1d1fa74be6a04f274
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 123.0
+    - Name: TopMargin
+      Id: g=af83ee725c70b4b10bd84524ab9cc6ce
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 324.0
+    - Name: FontSize
+      Id: g=07c5fb916371edd4af734923ed0513f5
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+  - Name: LinearGauge2
+    Id: g=5d6de3c440fc03376b278dab29ebfb72
+    Type: LinearGauge
+    Children:
+    - Name: Value
+      Id: g=c682f1dedd39066319e8fd2c987d5d65
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=64d24d89e641ab41b3b8cd595eaafc4c
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{NodeId:ns=14;g=5007b5e9-596a-68be-9729-1550b3167cfd}"
+        Children:
+        - Name: Mode
+          Id: g=4c403018f96dc0115f9328fe841019dc
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: MinValue
+      Id: g=e6e08e0f51415ffdfa1d403ff090ade3
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: MaxValue
+      Id: g=80ef541a2920ee952bb9ae349cf70d0e
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Id: g=9e66616b0afceb512162a5b3f81fb464
+      Type: BaseObjectType
+    - Name: Width
+      Id: g=8e14dc297f08398da2dbec0a01e4aea8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 328.0
+    - Name: Height
+      Id: g=8ddf3410401b99504a097405f60b1314
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: LeftMargin
+      Id: g=3008a3c75ac6a7a13ac587e985b5016f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 272.0
+    - Name: TopMargin
+      Id: g=69dbe7355993fffda7e5b9f8b00f8a3f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: ValueChangeBehaviour
+      Id: g=f534e189df1bb4e6d9ad09541522c411
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+  - Name: LinearGauge3
+    Id: g=660b9afb9fc3ac0e66c4ad5ac3b8d13b
+    Type: LinearGauge
+    Children:
+    - Name: Value
+      Id: g=4780ebaba77f7f554fcd302c8be350a4
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=8c26628cbb0408754eaf3f14a2439d7d
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{NodeId:ns=14;g=22ed9054-f43a-bc9d-dddd-05490950a109}"
+        Children:
+        - Name: Mode
+          Id: g=5e18ced93752bd00533db2e47296d00a
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: MinValue
+      Id: g=84a13dc8eb1bd00c28e97612ea0bae5c
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: MaxValue
+      Id: g=f1009bc5e7b77d18f8ee1ff725c6d78e
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Id: g=326c3c296d8769d467d3a1a6c94b0625
+      Type: BaseObjectType
+    - Name: Width
+      Id: g=646f8d354b147c0e3a8867bd296c479d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 328.0
+    - Name: Height
+      Id: g=a53bdb4ce531b6905574fd599a7276f1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: LeftMargin
+      Id: g=54057beadb590694dd019b88d320ef89
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 272.0
+    - Name: TopMargin
+      Id: g=7b4dba9f07e2c167faf278f68be98936
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: ValueChangeBehaviour
+      Id: g=617239f89474b020f259564708128dd0
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+- Name: Instructions
+  Id: g=bbb3d3002f4cc02edb9dddf972420150
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Background
+    Id: g=4097a1c90acadfef922e88bfd4ffdb5c
+    Type: Rectangle
+    Children:
+    - Name: RightMargin
+      Id: g=27ea89d7ee24d1a9c23caa1207c6966d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -40.0
+  - Name: Label4
+    Id: g=7992fe1684a73e268d3e0c3ea24f2d31
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=8475e808a3621edfa06f03265ce3fb7b
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"In this simple example you have to add by script the variables you want to share with the server."}
+    - Name: TopMargin
+      Id: g=d4e5a5cac608217d502e6ae169d31a29
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+    - Name: LeftMargin
+      Id: g=c6e51bb1582e1c3fe7cb36036c59289e
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 29.0
+  - Name: Label2
+    Id: g=65ac0395fba93f5081b3c5a3262bdae8
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=001648b7d623aea5939fae0dc99fce24
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"It is necessary to add two NugetPackage: EasyModbusTCP e System.Io.Ports"}
+    - Name: TopMargin
+      Id: g=3c66e5ab6758a1586b08ea11081f82b1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 61.0
+    - Name: LeftMargin
+      Id: g=3f5ebe98f4ddae7c3c3105b0e1899241
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 29.0
+  - Name: Label5
+    Id: g=d9212d38786eca2f0b8aa26e4886c61e
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=9315e3317621bf76bc738b17df38bfbd
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Simply add the lines with the variables you need."}
+    - Name: TopMargin
+      Id: g=465cd1c55217c5749783f61b1bfd2437
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: LeftMargin
+      Id: g=89a62b385a85d0732d80576541b28ee1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 29.0
+  - Name: Label1
+    Id: g=05476e63afb1f216d12b3c622c0b80b9
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=83e737177185d1b4b8dba2fb68e54cca
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"This example shows the use of the RuntimeScript to implement a Modbus Server TCP."}
+    - Name: TopMargin
+      Id: g=3fbc0968cd217d5545840ad60c3aec00
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Id: g=eb90a77c78ff373ce34327fb145a949d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 29.0

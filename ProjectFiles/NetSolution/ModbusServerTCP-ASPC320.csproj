@@ -1,0 +1,154 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EasyModbus">
+      <HintPath>EasyModbus.dll</HintPath>
+    </Reference>
+    <Reference Include="FTOptix.EthernetIP.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.EthernetIP.Net/4.0.13.182/Any/FTOptix.EthernetIP.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.MitsubishiQ.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.MitsubishiQ.Net/4.0.13.182/Any/FTOptix.MitsubishiQ.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Store.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Store.Net/3.0.14.182/Any/FTOptix.Store.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.MelsecFX3U.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.MelsecFX3U.Net/4.0.13.182/Any/FTOptix.MelsecFX3U.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Core.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Core.Net/2.0.0.38/Any/FTOptix.Core.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Fadis.Mod10.Net">
+      <HintPath>C:/ProgramData/ASEM/UNIQO/AdditionalModules/Fadis.Mod10.Net/4.0.6.94/Any/Fadis.Mod10.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.UI.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.UI.Net/26.2.0.45/Any/FTOptix.UI.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Modbus.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Modbus.Net/4.0.13.182/Any/FTOptix.Modbus.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.CoreBase.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.CoreBase.Net/4.2.2.182/Any/FTOptix.CoreBase.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.ODBCStore.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.ODBCStore.Net/1.1.27.182/Any/FTOptix.ODBCStore.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.CommunicationDriver.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.CommunicationDriver.Net/3.0.13.182/Any/FTOptix.CommunicationDriver.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.OPCUAClient.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.OPCUAClient.Net/6.1.14.182/Any/FTOptix.OPCUAClient.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.CoDeSys.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.CoDeSys.Net/4.0.13.182/Any/FTOptix.CoDeSys.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.NetLogic">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.NetLogic/4.0.4.182/Any/FTOptix.NetLogic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Alarm.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Alarm.Net/3.0.14.182/Any/FTOptix.Alarm.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.SQLiteStore.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.SQLiteStore.Net/2.1.4.182/Any/FTOptix.SQLiteStore.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.HMIProject.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.HMIProject.Net/5.2.16.182/Any/FTOptix.HMIProject.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.NativeUI.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.NativeUI.Net/0.1.0.105/Any/FTOptix.NativeUI.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.OmronEthernetIP.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.OmronEthernetIP.Net/4.0.13.182/Any/FTOptix.OmronEthernetIP.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.EventLogger.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.EventLogger.Net/6.0.3.182/Any/FTOptix.EventLogger.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Datalogger.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Datalogger.Net/9.0.2.182/Any/FTOptix.Datalogger.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.OPCUAServer.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.OPCUAServer.Net/3.1.14.182/Any/FTOptix.OPCUAServer.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.S7TCP.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.S7TCP.Net/4.0.13.182/Any/FTOptix.S7TCP.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.OmronFins.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.OmronFins.Net/4.0.13.182/Any/FTOptix.OmronFins.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Recipe.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Recipe.Net/1.2.2.182/Any/FTOptix.Recipe.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Report.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Report.Net/0.1.0.105/Any/FTOptix.Report.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.S7TiaProfinet.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.S7TiaProfinet.Net/5.0.0.6/Any/FTOptix.S7TiaProfinet.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.Retentivity.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.Retentivity.Net/2.0.47.182/Any/FTOptix.Retentivity.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.TwinCat.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.TwinCat.Net/5.0.1.182/Any/FTOptix.TwinCat.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UAManagedCore">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Bindings/Net/3.0.0.38/Win32_x64/UAManagedCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UAManagedCoreCommon">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Bindings/Net/3.0.0.38/Win32_x64/UAManagedCoreCommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.SerialPort.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.SerialPort.Net/0.0.4.182/Any/FTOptix.SerialPort.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTOptix.System.Net">
+      <HintPath>C:/Program Files/ASEM/UNIQO/QStudio/Modules/FTOptix.System.Net/2.0.0.41/Any/FTOptix.System.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
